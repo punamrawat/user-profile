@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f2f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Customer Profile Styles */
+
+.customer-profile {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #a2f2f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(137, 242, 230, 0.1);
+}
+
+.customer-profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.customer-profile h1 {
+  margin-top: 0;
+}
+
+/* Order History Styles */
+
+.order-history {
+  margin-top: 20px;
+}
+
+.order-history ul {
+  margin-top: 10px;
+}
+
+.order-history li {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.order-history li span {
+  font-size: 16px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.order-history li span:last-child {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Loyalty Program Styles */
+
+.loyalty-program {
+  margin-top: 20px;
+}
+
+.loyalty-program p {
+  margin-bottom: 10px;
+}
+
+.loyalty-program p span {
+  font-weight: bold;
+}
+
+/* Feedback Styles */
+
+.feedback {
+  margin-top: 20px;
+}
+
+.feedback ul {
+  margin-top: 10px;
+}
+
+.feedback li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback li span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.feedback li span:last-child {
+  font-size: 14px;
+  color: #666;
 }
